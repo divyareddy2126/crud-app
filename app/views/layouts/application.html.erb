@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webapp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-default">
+        
+
+  <a class="navbar-brand" href="#">CRUD APP</a>
+
+ 
+  
+  
+
+
+      <ul class="nav navbar-nav">
+        <li><%= link_to "LIST", home_path %></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Create", new_post_path %></li>
+      </ul>
+      </nav>-
+    <div class="container">
+  
+
+ 
+    <%= yield %>
+    </div>
+  </body>
+</html>
+ 
